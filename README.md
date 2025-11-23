@@ -18,5 +18,5 @@ git clone https://github.com/amirmbn/MTProxy.git
 
 Start the app in cluster mode using pm2:
 ```
-pm2 start mtproxy.js -i max
+pm2 start /root/MTProxy/mtproxy.js -i max
 ```
