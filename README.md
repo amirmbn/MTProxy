@@ -1,5 +1,5 @@
 # MTProxy
-MT-Proto proxy<br><br>
+MT-Proto proxy<br>
 
 Install NodeJS, NPM and GIT on Debian & Ubuntu
 ```
