@@ -1,24 +1,14 @@
 # MTProxy
 MT-Proto proxy<br><br>
 
-First Update Server
+Update Server and Install NodeJS, NPM, GIT and PM2 on Debian & Ubuntu
 ```
-sudo apt-get update
-```
-
-Install NodeJS, NPM and GIT on Debian & Ubuntu
-```
-apt-get install nodejs npm git
+sudo apt-get update && sudo apt-get install -y nodejs npm git && sudo npm install -g pm2
 ```
 
-Install NodeJS, NPM and GIT on CentsOS & RHEL
+Install NodeJS, NPM, GIT and PM2 on CentsOS & RHEL
 ```
-yum install nodejs npm git
-```
-
-Install PM2 
-```
-npm install pm2 -g
+sudo yum update && sudo yum install -y nodejs npm git && sudo npm install -g pm2
 ```
 
 Clone repository on your server:
