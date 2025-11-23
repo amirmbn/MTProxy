@@ -15,3 +15,13 @@ Install PM2
 ```
 npm install pm2 -g
 ```
+
+Clone repository on your server:
+```
+git clone https://github.com/amirmbn/MTProxy.git
+```
+
+Start the app in cluster mode using pm2:
+```
+pm2 start mtproxy.js -i max
+```
