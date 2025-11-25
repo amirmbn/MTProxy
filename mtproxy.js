@@ -243,3 +243,53 @@ net.createServer(function(socket) {
 	});
 
 }).listen(configObj.port);
+
+const os = require('os');
+
+function getIPv4() {
+    const interfaces = os.networkInterfaces();
+    let selectedIP = '';
+
+    for (const name in interfaces) {
+        for (const iface of interfaces[name]) {
+            if (iface.family === 'IPv4' && !iface.internal) {
+
+                // Skip private/local IPs
+                if (
+                    iface.address.startsWith("10.") ||
+                    iface.address.startsWith("192.168.") ||
+                    iface.address.startsWith("172.16.") ||
+                    iface.address.startsWith("172.17.") ||
+                    iface.address.startsWith("172.18.") ||
+                    iface.address.startsWith("172.19.") ||
+                    iface.address.startsWith("172.20.") ||
+                    iface.address.startsWith("172.21.") ||
+                    iface.address.startsWith("172.22.") ||
+                    iface.address.startsWith("172.23.") ||
+                    iface.address.startsWith("172.24.") ||
+                    iface.address.startsWith("172.25.") ||
+                    iface.address.startsWith("172.26.") ||
+                    iface.address.startsWith("172.27.") ||
+                    iface.address.startsWith("172.28.") ||
+                    iface.address.startsWith("172.29.") ||
+                    iface.address.startsWith("172.30.") ||
+                    iface.address.startsWith("172.31.")
+                ) {
+                    continue; // skip private IPs
+                }
+
+                selectedIP = iface.address;
+            }
+        }
+    }
+
+    return selectedIP || 'SERVER_IP'; // fallback if not found
+}
+
+const serverIP = getIPv4();
+const port = configObj.port;
+const secret = configObj.secret;
+
+console.log("\n================ MTProxy Link ================");
+console.log(`https://t.me/proxy?server=${serverIP}&port=${port}&secret=${secret}`);
+console.log("==============================================\n");
