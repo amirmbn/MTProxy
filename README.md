@@ -1,13 +1,13 @@
 # MTProxy
 MT-Proto proxy
 <br><br>
-Update Server and Install NodeJS, NPM, GIT and PM2 on **Ubuntu** & Debian
+Update Server and Install NodeJS, NPM, GIT and PM2 on **Ubuntu** & **Debian**
 ```
 sudo apt-get update && sudo apt-get install -y nodejs npm git && sudo npm install -g pm2
 ```
 <br>
 
-Install NodeJS, NPM, GIT and PM2 on CentsOS & RHEL
+Install NodeJS, NPM, GIT and PM2 on **CentsOS** & **RHEL**
 ```
 sudo yum update && sudo yum install -y nodejs npm git && sudo npm install -g pm2
 ```
