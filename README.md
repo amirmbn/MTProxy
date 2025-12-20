@@ -1,7 +1,7 @@
 # MTProxy
 MT-Proto proxy
 <br><br>
-Update Server and Install NodeJS, NPM, GIT and PM2 on Debian & Ubuntu
+Update Server and Install NodeJS, NPM, GIT and PM2 on Ubuntu & Debian
 ```
 sudo apt-get update && sudo apt-get install -y nodejs npm git && sudo npm install -g pm2
 ```
