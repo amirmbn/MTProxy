@@ -21,18 +21,26 @@ sudo apt-get update && sudo apt-get install -y nodejs npm git && sudo npm instal
 sudo yum update && sudo yum install -y nodejs npm git && sudo npm install -g pm2
 ```
 </div><br>
+<div align="right">
 
-Clone repository on your server:
+کلون کردن مخزن (**Repository**) روی سرور شما:
+</div>
+<div align="left">
+
 ```
 git clone https://github.com/amirmbn/MTProxy.git
 ```
-<br>
+</div><br>
+<div align="right">
 
-Start the app in cluster mode using pm2:
+اجرای برنامه در حالت کلاستر (**Cluster**) با استفاده از PM2:
+</div>
+<div align="left">
+
 ```
 pm2 start /root/MTProxy/mtproxy.js -i max
 ```
-<br>
+</div><br>
 
 ## 💰 Support This Project with Crypto
 [![Donate BTC](https://img.shields.io/badge/Donate-BTC-orange)](https://www.blockchain.com/btc/address/bc1qul4v4rudyl7lacekfp8yda5sc5575mh2tzv9au)
