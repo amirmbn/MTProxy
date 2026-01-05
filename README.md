@@ -4,7 +4,8 @@ MT-Proto proxy
 <div align="right">
 
 این پروژه امکان راه‌اندازی دو نوع پروکسی تلگرام را فراهم می‌کند؛ نسخه ساده بدون تبلیغات و نسخه همراه با تبلیغات.<br><br><br>
-## نسخه همراه با تبلیغات<br><br>
+## نسخه همراه با تبلیغات
+<br><br>
 به‌روزرسانی سرور و نصب NodeJS، NPM، GIT و PM2 روی اوبونتو (**Ubuntu**) و دبیان (**Debian**)
 </div>
 <div align="left">
@@ -47,6 +48,7 @@ pm2 start /root/MTProxy/mtproxy.js -i max
 <div align="right">
 
 ## نسخه همراه با تبلیغات
+<br><br>
 سرور اوبونتو را آپدیت کنید
 </div>
 <div align="left">
