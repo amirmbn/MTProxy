@@ -46,55 +46,69 @@ pm2 start /root/MTProxy/mtproxy.js -i max
 <div align="right">
 
 ### نسخه همراه با تبلیغات
+</div><br>
+<div align="right">
+
+سرور اوبونتو را آپدیت کنید
 </div>
-
-
+<div align="left">
 
 ```
 apt-get update
 ```
+</div><br>
+<div align="right">
+
+نصب Docker روی اوبونتو / دبیان
+</div>
+<div align="left">
 
 ```
 apt-get install docker.io
 ```
+</div><br>
+<div align="right">
+
+پروکسی را برای دریافت تگ (TAG) از بات @MTProxybot اجرا کنید
+</div>
+<div align="left">
 
 ```
 docker run -d -p6900:443 --name=mtproto-proxy --restart=always -v proxy-config:/data -e SECRET=fe7034e21304d30a82f634358a5ab18f telegrammessenger/proxy:latest
 ```
+</div><br>
+<div align="right">
+
+قبل از اجرا کد زیر به بات @MTProxybot در تلگرام مراجعه کنید و یک پروکسی جدید بسازید و آی پی سرور و پورت 6900 اگر تغییر ندادید و سکرت کد fe7034e21304d30a82f634358a5ab18f را به ربات بدهید و در نهایت تگی که بات به شما میدهد را ذخیره کنید تا در ادامه نیاز میشود
+و در ادامه پروکسی را انتخاب و Edit promotion را بزنید و آیدی کانال تلگرامی که میخواهید تبلیغ کنید را وارد کنید
+کد زیر برای متوقف کردن کانتینر mtproto-proxy است
+</div>
+<div align="left">
 
 ```
 docker container stop mtproto-proxy
 ```
+</div><br>
+<div align="right">
+
+پاک کردن کانتینر mtproto-proxy
+</div>
+<div align="left">
 
 ```
 docker container rm mtproto-proxy
 ```
+</div><br>
+<div align="right">
+
+در کد زیر تگی که بات @MTProxybot به شما داد رو جایگزین 40e3b3c69143e023f9800261257b7760 کنید
+</div>
+<div align="left">
 
 ```
 docker run -d -p6900:443 --name=mtproto-proxy --restart=always -v proxy-config:/data -e WORKERS=0 -e SECRET=fe7034e21304d30a82f634358a5ab18f -e TAG=40e3b3c69143e023f9800261257b7760 telegrammessenger/proxy:latest
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+</div><br>
 
 ## 💰 Support This Project with Crypto
 [![Donate BTC](https://img.shields.io/badge/Donate-BTC-orange)](https://www.blockchain.com/btc/address/bc1qul4v4rudyl7lacekfp8yda5sc5575mh2tzv9au)
