@@ -104,7 +104,7 @@ docker container rm mtproto-proxy
 </div><br>
 <div align="right">
 
-در کد زیر تگی که بات @MTProxybot به شما داد رو جایگزین 40e3b3c69143e023f9800261257b7760 کنید
+در کد زیر تگی که بات @MTProxybot به شما داد رو جایگزین **`40e3b3c69143e023f9800261257b7760`** کنید
 </div>
 <div align="left">
 
