@@ -50,6 +50,30 @@ pm2 start /root/MTProxy/mtproxy.js -i max
 
 
 
+```
+apt-get update
+```
+
+```
+apt-get install docker.io
+```
+
+```
+docker run -d -p6900:443 --name=mtproto-proxy --restart=always -v proxy-config:/data -e SECRET=fe7034e21304d30a82f634358a5ab18f telegrammessenger/proxy:latest
+```
+
+```
+docker container stop mtproto-proxy
+```
+
+```
+docker container rm mtproto-proxy
+```
+
+```
+docker run -d -p6900:443 --name=mtproto-proxy --restart=always -v proxy-config:/data -e WORKERS=0 -e SECRET=fe7034e21304d30a82f634358a5ab18f -e TAG=40e3b3c69143e023f9800261257b7760 telegrammessenger/proxy:latest
+```
+
 
 
 
