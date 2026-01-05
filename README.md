@@ -11,12 +11,16 @@ MT-Proto proxy
 sudo apt-get update && sudo apt-get install -y nodejs npm git && sudo npm install -g pm2
 ```
 </div><br>
+<div align="right">
 
-Install NodeJS, NPM, GIT and PM2 on **CentsOS** & **RHEL**
+نصب NodeJS، NPM، GIT و PM2 روی سنت‌اواس (**CentsOS**) و رد هت اینترپرایز لینوکس (**RHEL**)
+</div>
+<div align="left">
+
 ```
 sudo yum update && sudo yum install -y nodejs npm git && sudo npm install -g pm2
 ```
-<br>
+</div><br>
 
 Clone repository on your server:
 ```
