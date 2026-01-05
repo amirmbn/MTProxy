@@ -2,13 +2,15 @@
 MT-Proto proxy
 <br><br>
 <div align="right">
+
 به‌روزرسانی سرور و نصب NodeJS، NPM، GIT و PM2 روی اوبونتو (**Ubuntu**) و دبیان (**Debian**)
 </div>
 <div align="left">
+
 ```
 sudo apt-get update && sudo apt-get install -y nodejs npm git && sudo npm install -g pm2
 ```
-<br>
+</div><br>
 
 Install NodeJS, NPM, GIT and PM2 on **CentsOS** & **RHEL**
 ```
